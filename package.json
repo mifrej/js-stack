@@ -5,6 +5,10 @@
   "author": "mifrej <milosz@frejnik.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node ."
+    "start": "babel-node src"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
   }
 }
