@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "mifrej <milosz@frejnik.com>",
+  "homepage": "https://github.com/verekia/js-stack-from-scratch",
   "license": "MIT",
   "scripts": {
     "start": "babel-node src",
