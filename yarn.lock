@@ -698,7 +698,7 @@ braces@^1.8.2:
     preserve "^0.2.0"
     repeat-element "^1.1.2"
 
-browserslist@^2.1.2:
+browserslist@^2.1.2, browserslist@^2.11.3:
   version "2.11.3"
   resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-2.11.3.tgz#fe36167aed1bbcde4827ebfe71347a2cc70b99b2"
   dependencies:
@@ -718,6 +718,10 @@ caller-path@^0.1.0:
 callsites@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/callsites/-/callsites-0.2.0.tgz#afab96262910a7f33c19a5775825c69f34e350ca"
+
+caniuse-db@^1.0.30000794:
+  version "1.0.30000808"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000808.tgz#30dfd83009d5704f02dffb37725068ed12a366bb"
 
 caniuse-lite@^1.0.30000792:
   version "1.0.30000808"
@@ -1010,6 +1014,16 @@ eslint-module-utils@^2.1.1:
     debug "^2.6.8"
     pkg-dir "^1.0.0"
 
+eslint-plugin-compat@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-compat/-/eslint-plugin-compat-2.2.0.tgz#d612a9988d9fba66bcd8e86fcc1b551753aac995"
+  dependencies:
+    babel-runtime "^6.26.0"
+    browserslist "^2.11.3"
+    caniuse-db "^1.0.30000794"
+    mdn-browser-compat-data "^0.0.20"
+    requireindex "^1.1.0"
+
 eslint-plugin-import@^2.7.0:
   version "2.8.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.8.0.tgz#fa1b6ef31fcb3c501c09859c1b86f1fc5b986894"
@@ -1147,7 +1161,7 @@ expand-range@^1.8.1:
   dependencies:
     fill-range "^2.1.0"
 
-extend@~3.0.0:
+extend@3.0.1, extend@~3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/extend/-/extend-3.0.1.tgz#a755ea7bc1adfcc5a31ce7e762dbaadc5e636444"
 
@@ -1772,6 +1786,12 @@ lru-cache@^4.0.1:
     pseudomap "^1.0.2"
     yallist "^2.1.2"
 
+mdn-browser-compat-data@^0.0.20:
+  version "0.0.20"
+  resolved "https://registry.yarnpkg.com/mdn-browser-compat-data/-/mdn-browser-compat-data-0.0.20.tgz#26e4a226d96cc5318fdc504d6dfd86907752da5c"
+  dependencies:
+    extend "3.0.1"
+
 micromatch@^2.1.5:
   version "2.3.11"
   resolved "https://registry.yarnpkg.com/micromatch/-/micromatch-2.3.11.tgz#86677c97d1720b363431d04d0d15293bd38c1565"
@@ -2243,6 +2263,10 @@ require-uncached@^1.0.3:
   dependencies:
     caller-path "^0.1.0"
     resolve-from "^1.0.0"
+
+requireindex@^1.1.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/requireindex/-/requireindex-1.2.0.tgz#3463cdb22ee151902635aa6c9535d4de9c2ef1ef"
 
 resolve-from@^1.0.0:
   version "1.0.1"
