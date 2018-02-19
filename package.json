@@ -9,8 +9,7 @@
     "start": "yarn dev:start",
     "dev:start": "nodemon -e js,jsx --ignore lib --ignore dist --exec babel-node src/server",
     "dev:wds": "webpack-dev-server --progress",
-    "prod:build":
-      "rimraf lib dist && babel src -d lib --ignore .test.js && cross-env NODE_ENV=production webpack -p --progress",
+    "prod:build": "rimraf lib dist && babel src -d lib --ignore .test.js && cross-env NODE_ENV=production webpack -p --progress",
     "prod:start": "cross-env NODE_ENV=production pm2 start lib/server && pm2 logs",
     "prod:stop": "pm2 delete server",
     "lint": "eslint src webpack.config.babel.js --ext .js,.jsx",
@@ -51,5 +50,7 @@
     "webpack": "^3.11.0",
     "webpack-dev-server": "^2.11.1"
   },
-  "browserslist": ["> 1%"]
+  "browserslist": [
+    "> 1%"
+  ]
 }
