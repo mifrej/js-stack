@@ -6,7 +6,8 @@
   "homepage": "https://github.com/verekia/js-stack-from-scratch",
   "license": "MIT",
   "scripts": {
-    "start": "babel-node src/server",
+    "start": "yarn dev:start",
+    "dev:start": "nodemon --ignore lib --exec babel-node src/server",
     "test": "eslint src && flow && jest --coverage",
     "prepush": "yarn test"
   },
@@ -29,7 +30,8 @@
     "eslint-plugin-react": "^7.4.0",
     "flow-bin": "^0.66.0",
     "husky": "^0.14.3",
-    "jest": "^22.3.0"
+    "jest": "^22.3.0",
+    "nodemon": "^1.15.0"
   },
   "browserslist": [
     "> 1%"
