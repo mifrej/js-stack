@@ -6,7 +6,7 @@
   "homepage": "https://github.com/verekia/js-stack-from-scratch",
   "license": "MIT",
   "scripts": {
-    "start": "babel-node src",
+    "start": "babel-node src/server",
     "test": "eslint src && flow && jest --coverage",
     "prepush": "yarn test"
   },
