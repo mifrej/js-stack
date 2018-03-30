@@ -6,7 +6,6 @@ import { isProd } from './src/shared/util'
 
 export default {
   entry: [
-    'react-hot-loader/patch',
     './src/client',
   ],
   output: {
@@ -18,6 +17,7 @@ export default {
     rules: [{ test: /\.(js|jsx)$/, use: 'babel-loader', exclude: /node_modules/ }],
   },
   devtool: isProd ? false : 'source-map',
+  mode: isProd ? 'production' : 'development',
   resolve: {
     extensions: ['.js', '.jsx'],
   },
