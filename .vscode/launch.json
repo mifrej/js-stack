@@ -9,7 +9,10 @@
       "request": "launch",
       "name": "Chrome",
       "url": "http://localhost:8000",
-      "webRoot": "${workspaceRoot}/src/client"
+      "webRoot": "${workspaceRoot}/src/client",
+      "runtimeExecutable":
+        "/Applications/Google Chrome Canary.app/Contents/MacOS/Google Chrome Canary",
+      "userDataDir": "${workspaceRoot}/.vscode/chrome"
     }
   ]
 }
