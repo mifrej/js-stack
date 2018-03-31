@@ -5,9 +5,8 @@ import { WDS_PORT } from './src/shared/config'
 import { isProd } from './src/shared/util'
 
 export default {
-  entry: [
-    './src/client',
-  ],
+  context: path.resolve(__dirname, 'src/client'),
+  entry: './index',
   output: {
     filename: 'js/bundle.js',
     path: path.resolve(__dirname, 'dist'),
@@ -33,5 +32,5 @@ export default {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
-  ]
+  ],
 }
